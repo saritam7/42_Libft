@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 18:55:23 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/19 18:39:27 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/19 18:59:27 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ctype.h>
 
-#ifndef LIBFT_H
-#define LIBFT_H
+int ft_isalpah(int c)
+{
+    if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+        return (1);
+    return(0);
 
-#include <stddef.h>
-
-size_t ft_strlen(const char *s);
-int ft_isalpah(int c);
-
-#endif
+}
