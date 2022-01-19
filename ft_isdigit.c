@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 19:54:53 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/19 19:44:25 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/19 19:55:31 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int ft_isdigit(int c)
+{
+    if (c >= '0' && c <= '9')
+        return (1);
+    return(0);
+}
 
-#ifndef LIBFT_H
-#define LIBFT_H
-
-#include <stddef.h>
-
-size_t ft_strlen(const char *s);
-int ft_isalpha(int c);
-int ft_isdigit(int c);
-
-#endif
