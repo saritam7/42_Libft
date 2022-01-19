@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 18:55:23 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/19 19:41:37 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@
 #include <stddef.h>
 
 size_t ft_strlen(const char *s);
-int ft_isalpah(int c);
+int ft_isalpha(int c);
 
 #endif

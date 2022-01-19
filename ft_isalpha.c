@@ -6,13 +6,11 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 18:39:27 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 18:59:27 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/19 19:20:29 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-
-int ft_isalpah(int c)
+int ft_isalpha(int c)
 {
     if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
         return (1);
