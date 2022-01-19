@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 20:00:15 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 20:24:55 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/19 20:08:17 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/19 20:37:13 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c);
-int ft_isdigt(int c);
-
-int ft_isalnum(int c)
+int ft_isascii(int c)
 {
-    if (ft_isalpha(c) || ft_isdigt(c)) 
-        return (1);
-    return(0);
-
+    return (c >= 0 && c <= 127);
 }
