@@ -6,12 +6,12 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:52:31 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 17:12:05 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/20 20:20:06 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include <string.h>
+#include <stddef.h>
 
 size_t ft_strlen(const char *s)
 {
@@ -19,9 +19,7 @@ size_t ft_strlen(const char *s)
 
     cont = 0;
     while (s[cont] != '\0')
-    {
         cont++;
-    }
     return(cont);
     
 }

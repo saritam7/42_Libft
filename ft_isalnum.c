@@ -6,12 +6,11 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 20:00:15 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/19 20:24:55 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/20 18:47:13 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c);
-int ft_isdigt(int c);
+#include "libft.h"
 
 int ft_isalnum(int c)
 {

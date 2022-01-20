@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 18:39:27 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/20 18:46:09 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/20 14:10:33 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/20 14:17:18 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+size_t ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
 {
-   return(((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')));
-
+    size_t 
 }

@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/19 18:39:27 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/20 18:46:09 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/20 14:45:14 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/20 14:47:20 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+void *ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-   return(((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')));
-
+    
 }
