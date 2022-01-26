@@ -6,11 +6,21 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 14:21:44 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/20 14:43:54 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/24 11:44:22 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void ft_bzero(void *s, size_t n)
 {
+    size_t i;
+
+    i = 0;
+    while (i < n)
+    {
+       ((char *) s)[i] = 0;
+       i++;
+    }
     
 }
