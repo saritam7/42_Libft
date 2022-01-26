@@ -6,16 +6,15 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 20:00:15 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/20 18:47:13 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/26 16:34:25 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    if (ft_isalpha(c) || ft_isdigt(c)) 
-        return (1);
-    return(0);
-
+	if (ft_isalpha(c) || ft_isdigt(c))
+		return (1);
+	return (0);
 }
