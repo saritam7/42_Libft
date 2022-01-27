@@ -6,13 +6,13 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 17:12:20 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/26 17:24:46 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/27 20:09:49 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if  (c >= 'A' && c <= 'Z')
-        c += 32;
-    return (c);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

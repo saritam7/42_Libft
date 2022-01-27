@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/20 13:31:39 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/27 19:24:45 by smoraled         ###   ########.fr       */
+/*   Created: 2022/01/27 16:33:21 by smoraled          #+#    #+#             */
+/*   Updated: 2022/01/27 16:48:46 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	return (c >= 32 && c <= 126);
+    
 }

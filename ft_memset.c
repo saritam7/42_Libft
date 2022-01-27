@@ -6,42 +6,21 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/20 13:53:04 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/20 20:21:32 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/27 19:44:40 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stddef.h>
 
-void *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-    size_t i;
-    //unsigned char* direccion;
+	size_t	i;
 
-    i = 0;
-    //direccion = (unsigned char*) b;
-    while(i < len)
-    {
-        // *(b + i)
-
-        // b = "hola"
-        // i = 1
-        // (b + i) = "ola" (void*)
-        // ((unsigned char*) b + i) = "ola" (unsigned char*)
-        // *((unsigned char*) b + i) = 'o' (unsigned char)
-        //*((unsigned char*) b + i) = (unsigned char) c;
-
-
-        // b = "hola"
-        // |h|o|l|a|\0||||
-        // ||||h||||o|
-        // i = 1
-        // (b + i) = "ola" (void*)
-        // ((unsigned char*) b + i) = "ola" (unsigned char*)
-        // *((unsigned char*) b + i) = 'o' (unsigned char)
-        ((unsigned char *) b)[i] = (unsigned char)c;
-        // direccion[i] = (unsigned char)c;
-        // *(direccion + i) = (unsigned char)c;
-        i++;
-    }
-    return(b);
+	i = 0;
+	while (i < len)
+	{
+		((unsigned char *) b)[i] = (unsigned char)c;
+		i++;
+	}
+	return (b);
 }

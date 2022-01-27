@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/26 17:43:35 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/27 16:48:25 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,11 @@ size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize
 int ft_toupper(int c);
 int ft_tolower(int c);
 char *ft_strchr(const char *s, int c);
+char *ft_strrchr(const char *s, int c);
+int ft_strncmp(const char *s1, const char *s2, size_t n);
+void *ft_memchr(const void *s, int c, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+char *ft_strnstr(const char *haystack, const char *needle, size_t len);
+int ft_atoi(const char *str);
 
 #endif
