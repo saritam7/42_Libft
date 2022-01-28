@@ -6,11 +6,14 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 16:43:37 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/27 16:45:07 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/28 13:18:17 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 int ft_atoi(const char *str)
 {
-    
+    str = 0;
+    return(1);
 }
+*/

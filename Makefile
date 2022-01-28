@@ -5,26 +5,26 @@ FLAGS=-Wall -Wextra -Werror
 SRCS= ft_isdigit.c \
 ft_memset.c \
 ft_isprint.c \
-ft_atoi.c \
-ft_strlcpy.c \
 ft_tolower.c \
 ft_bzero.c \
 ft_memcpy.c \
 ft_strlen.c \
 ft_toupper.c \
-ft_memchr.c \
 ft_isalnum.c \
-ft_memcmp.c \
 ft_strncmp.c \
 ft_isalpha.c \
-ft_memcpy.c \
 ft_strchr.c \
 ft_isascii.c \
 ft_memmove.c \
+ft_memchr.c \
+ft_memcmp.c \
 ft_strrchr.c \
-ft_strlcat.c \
-ft_strnstr.c \
-ft_calloc.c \
+ft_strlcpy.c \
+ft_memchr.c 
+#ft_strnstr.c \
+#ft_strlcat.c \
+#ft_atoi.c \
+#ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
@@ -68,13 +68,23 @@ crearPuntoA: $(OBJS)
 crearPuntoA_BONUS: $(BONUS_OBJS)
 	ar -rcs $(NAME) $(BONUS_OBJS)
 
+#pasar test
+TEST1 = ~/Desktop/42_Libft/libftTester
+TEST2 = ~/Desktop/42_Libft/libft-unit-test
+TEST3 = ~/Desktop/libft-war-machine
+
+test: $(NAME)
+	make -C $(TEST1)
+	make f -C $(TEST2)
+	bash $(TEST3)/grademe.sh
+
 # Borra todos los .o
 clean:
-	rm $(OBJS)
+	rm -rf $(OBJS)
 
 # Borra todos los .o y además, el .a
 fclean: clean
-	rm $(NAME)
+	rm  -rf $(NAME)
 
 # Borras todo, y luego haces todo de nuevo
 re: fclean all
