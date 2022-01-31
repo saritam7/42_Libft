@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 17:25:48 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/28 16:05:10 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/01/31 19:43:51 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
-		return (NULL);
-	while (s[i] != '\0')
+	while (s[i])
 	{
 		if (s[i] == (char)c)
 			return ((char *) &s[i]);
