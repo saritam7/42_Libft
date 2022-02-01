@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/01/31 17:23:16 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/02/01 18:33:38 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #define LIBFT_H
 
 #include <stddef.h>
+#include <stdlib.h>
 
 size_t ft_strlen(const char *s);
 int ft_isalpha(int c);
@@ -37,5 +38,8 @@ void *ft_memchr(const void *s, int c, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int ft_atoi(const char *str);
+
+void *ft_calloc(size_t count, size_t size);
+char *ft_strdup(const char *s1);
 
 #endif
