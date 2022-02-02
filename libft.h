@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 16:35:06 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/01 18:33:38 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/02/02 19:56:06 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,14 @@ int ft_atoi(const char *str);
 
 void *ft_calloc(size_t count, size_t size);
 char *ft_strdup(const char *s1);
+
+char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
+
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
 
 #endif
