@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 19:16:05 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/02 19:46:52 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/02/04 14:37:26 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (s == NULL)
+		return ;
 	while (s[i])
 	{
 		write (fd, &s[i], 1);
