@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/04 16:50:40 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/07 15:23:23 by smoraled         ###   ########.fr       */
+/*   Created: 2022/02/07 17:36:21 by smoraled          #+#    #+#             */
+/*   Updated: 2022/02/07 18:04:18 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include "libft.h"
 
-char **ft_split(char const *s, char c)
+void ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    
-}*/
+    if (lst == NULL)
+        return ;
+    while (lst != NULL)
+    {
+        f(lst->content);
+        lst = lst->next;
+    }
+}

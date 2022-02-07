@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/04 16:50:40 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/07 15:23:23 by smoraled         ###   ########.fr       */
+/*   Created: 2022/02/07 16:34:08 by smoraled          #+#    #+#             */
+/*   Updated: 2022/02/07 17:27:47 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
 #include "libft.h"
 
-char **ft_split(char const *s, char c)
+void ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    
-}*/
+    if (*lst == NULL)
+        return ;
+    ft_lstclear(&(*lst)->next, del);
+    ft_lstdelone(*lst, del);
+    *lst = NULL; 
+}
