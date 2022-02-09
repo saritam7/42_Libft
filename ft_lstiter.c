@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 17:36:21 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/07 18:04:18 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:17:27 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void ft_lstiter(t_list *lst, void (*f)(void *))
 {
-    if (lst == NULL)
+    if (lst == NULL || f == NULL)
         return ;
     while (lst != NULL)
     {

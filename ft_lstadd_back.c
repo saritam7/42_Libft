@@ -6,7 +6,7 @@
 /*   By: smoraled <smoraled@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 13:50:08 by smoraled          #+#    #+#             */
-/*   Updated: 2022/02/07 15:46:09 by smoraled         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:44:01 by smoraled         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void ft_lstadd_back(t_list **lst, t_list *new)
 {
+    t_list  *lst2;
+
     if (lst == NULL || new == NULL)
         return ;
     if (*lst == NULL)
@@ -21,7 +23,8 @@ void ft_lstadd_back(t_list **lst, t_list *new)
         *lst = new;
         return ;
     }
-    while ((*lst)->next != NULL)
-        *lst = (*lst)->next;
-    (*lst)->next = new;
+    lst2 = *lst;
+    while (lst2->next != NULL)
+        lst2 = lst2->next;
+    lst2->next = new;
 }
