@@ -55,43 +55,31 @@ OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS:.c=.o)
 
 # Mandas a crear el .a
-all: crearPuntoA
+all: $(NAME)
 
 bonus: crearPuntoA_BONUS
-
-$(NAME): crearPuntoA
 
 #gcc main, funcion(es), 3w's, (Creas los .o)
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
 
 #crear .a
-crearPuntoA: $(OBJS)
+$(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
-crearPuntoA_BONUS: $(BONUS_OBJS)
-	ar -rcs $(NAME) $(BONUS_OBJS)
-
-#pasar test
-TEST1 = ~/Desktop/42_Libft/libftTester
-TEST2 = ~/Desktop/42_Libft/libft-unit-test
-TEST3 = ~/Desktop/libft-war-machine
-
-test: $(NAME)
-	make -C $(TEST1)
-	make f -C $(TEST2)
-	bash $(TEST3)/grademe.sh
+crearPuntoA_BONUS: $(OBJS) $(BONUS_OBJS)
+	@make OBJS="$(OBJS) $(BONUS_OBJS)"
 
 # Borra todos los .o
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJS) $(BONUS_OBJS)
 
 # Borra todos los .o y además, el .a
 fclean: clean
-	rm  -rf $(NAME) $(BONUS_OBJS)
+	rm  -rf $(NAME)
 
 # Borras todo, y luego haces todo de nuevo
 re: fclean all
 
 #sirve para que sepa que no quiero hacer un archivo sino que entre a la orden
-.PHONY: all crearPuntoA clean fclean re
+.PHONY: all clean fclean re bonus

@@ -3,3 +3,8 @@ a.out
 main*
 .DS_Store
 Sh*
+test
+.swp
+Sh-*
+libftTester
+libft-unit-test
